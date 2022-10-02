@@ -3,6 +3,7 @@
 class Solution:
     def numRollsToTarget(self, d: int, f: int, target: int) -> int:
         memo = {}
+
         def dp(d, target):
             if d == 0:
                 return 0 if target > 0 else 1
